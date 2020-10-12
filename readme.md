@@ -1,4 +1,4 @@
-# Ticketing App with Laravel
+# Ticket Issuing App with Laravel
 
 [![Build Status](https://travis-ci.org/guillaumebriday/laravel-blog.svg?branch=master)](https://github.com/vwedesam/ticket-issuing-system)
 
