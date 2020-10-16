@@ -39,6 +39,8 @@ password: secret
 ## Some screenshots
 
  ![dashboard](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(7).png)
+ 
+![ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/p-and-t.jpeg)
 
 ![Ticket Report](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(8).png)
 
