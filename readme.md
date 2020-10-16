@@ -1,65 +1,57 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Ticket Issuing App with Laravel
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![Build Status](https://travis-ci.org/guillaumebriday/laravel-blog.svg?branch=master)](https://github.com/vwedesam/ticket-issuing-system)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Installation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Development environment requirements :
+- [php](https://www.php.net/)
+- [msql]()
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+Setting up your development environment on your local machine :
+```bash
+$ git clone https://github.com/vwedesam/ticket-issuing-system.git
+$ cd ticket-issuing-system
+$ cp .env.example .env
+```
 
-## Learning Laravel
+Start Laravel dev Server:
+```bash
+$ php artisan serve
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+Now you can access the application via [http://localhost:8000](http://localhost:8000).
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Before starting
+You need to run the migrations with the seeds :
+```bash
+$ artisan migrate --seed
+```
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+This will create a new user that you can use to sign in :
+```yml
+Username: Admin@123
+password: secret
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+## Some screenshots
 
-## Contributing
+ ![dashboard](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(7).png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+ ![ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/p-and-t.jpg)
 
-## Security Vulnerabilities
+![Ticket Report](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(8).png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![Role Management](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System.png)
+
+![Assign Permission to Role](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
+
+![Add Vip Ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(2).png)
+
+![Add Vip Group Ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is released under the [MIT](http://opensource.org/licenses/MIT) license.
