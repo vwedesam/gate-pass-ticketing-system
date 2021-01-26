@@ -1,4 +1,4 @@
-# Ticket Issuing App with Laravel
+# Gate Pass Ticket Issuing/Generating App with Laravel
 
 [![Build Status](https://travis-ci.org/guillaumebriday/laravel-blog.svg?branch=master)](https://github.com/vwedesam/ticket-issuing-system)
 
