@@ -12,7 +12,7 @@ Development environment requirements :
 Setting up your development environment on your local machine :
 ```bash
 $ git clone https://github.com/vwedesam/gate-pass-ticket-issuing-system.git
-$ cd gate-pass-ticket-issuing-system.git
+$ cd gate-pass-ticket-issuing-system
 $ cp .env.example .env
 ```
 
