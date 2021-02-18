@@ -51,7 +51,35 @@
                                     <p> This will Delete All Ticket History (which include Ticket Price Setup And Issued Tickets ) </p>
                                 </div>
                             </div> <!-- end Row -->
-                            
+                            <hr/>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-box">
+                                        <div class="card-head">
+                                            <header> Manage Database  </header>
+                                        </div>
+                                        <div class="card-body " id="bar-parent5">
+                                        <div class="row">
+                                            <div class="col-md-8 border-right">
+                                            <form enctype="multipart/form-data" method="POST" action="{{ route('organization.import_db') }}" >
+                                                @csrf
+                                                <label> Import (gzip, bzip2, zip, sql) </label>
+                                                <input type="file" name="sql" class="form-control" required>
+                                                <p> </p><p> </p>
+                                                <button type="submit" class="btn btn-primary"> Import ! </button>
+                                            </form>
+                                            </div> <!-- End Col- ---->
+                                            <div class="col-md-4">
+                                               <form method="POST" action="{{ route('organization.export_db') }}" >
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-success"> Export ! </button>
+                                                </form>
+                                            </div> <!-- col end -->
+                                        </div> <!-- row end -->
+                                        </div>  <!-- card body end -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
             <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}" class="login100-form validate-form">
                 @csrf
                 <span class="login100-form-logo">
-                    <i class="zmdi zmdi-flower"></i>
+                    <img src="./assets/img/icon.jpg">
                 </span>
                 <span class="login100-form-title p-b-34 p-t-27">
                     Log in

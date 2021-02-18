@@ -138,16 +138,16 @@ class IssuedTicketController extends Controller
      */
     public function print($id)
     {
-        if( Auth()->user()->hasPermission('reprint-ticket') ){
+        //if( Auth()->user()->hasPermission('reprint-ticket') ){
 
-            $ticket = IssuedTicket::find($id);
+            $ticket = IssuedTicket::with("user")->where('id', $id)->get()[0];
 
             $org_info = OrganizationInfo::get()->first();
 
             return view('ticket/print')->with(['ticket' => $ticket, 'org_info' => $org_info]);
-        }
+        //}
 
-        return redirect()->route('home');
+        //return redirect()->route('home');
         
     }
 

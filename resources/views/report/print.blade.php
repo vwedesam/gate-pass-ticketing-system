@@ -2,7 +2,6 @@
 <html>
 <head>
   <title> </title>
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <style type="text/css"  media="print">
     
     @media print {
@@ -74,7 +73,6 @@
   </style>
 </head>
 <body>
-
 <div class="container">
   <div class="row ">
   <script type="text/javascript">
@@ -111,7 +109,5 @@
   </div> 
   <div class="bottom"> ---- </div>
 </div>
-
-<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

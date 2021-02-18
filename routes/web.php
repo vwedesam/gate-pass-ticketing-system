@@ -38,6 +38,9 @@ Route::get('/app-setup', 'OrganizationInfoController@index')
 Route::post('/organization/update/{id}', 'OrganizationInfoController@update')
 				->name('organization.update')
 				->middleware('active_user');
+// Database Export and Import
+Route::post('/organization/export_db', 'OrganizationInfoController@exportDb')->name('organization.export_db');
+Route::post('/organization/import_db', 'OrganizationInfoController@importDb')->name('organization.import_db');
 
 Route::delete('/issued-ticket/destroy', 'IssuedTicketController@multiDelete')
 				->name('issued-ticket.multiDelete')
@@ -56,6 +59,8 @@ Route::get('/print/reports/{date}', 'ReportController@print')
 				->middleware('active_user');
 
 Auth::routes();
+
+Route::get('/home', 'HomeController@index');
 
 Route::get('/', 'HomeController@index')
 				->name('home')

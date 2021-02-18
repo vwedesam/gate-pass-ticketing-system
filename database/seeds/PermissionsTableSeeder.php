@@ -61,8 +61,8 @@ class PermissionsTableSeeder extends Seeder
         $admin->detachPermissions([$appManagement, $userManagement, $roleManagement, $ticketSetup, $ticketManagement, $printReports, $reprintTicket]);
         $admin->attachPermissions([$appManagement, $userManagement, $roleManagement, $ticketSetup, $ticketManagement, $printReports, $reprintTicket]);
 
-        $staff->detachPermissions([$printReports]);
-        $staff->attachPermissions([$printReports]);
+        $staff->detachPermissions([$printReports, $appManagement]);
+        $staff->attachPermissions([$printReports, $appManagement]);
         
         
     }

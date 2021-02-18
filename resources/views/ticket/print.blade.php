@@ -2,13 +2,13 @@
 <html>
 <head>
   <title> </title>
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <style type="text/css"  media="print">
     
     @media print {
       @page {
         margin-top: 0;
         margin-bottom: 0;
+        padding-bottom: 0;
       }
     }
     
@@ -32,12 +32,12 @@
     }
     .ticket_table {
       margin-top: -15px;
-      margin-bottom: 85px;
       letter-spacing: 5px;
       font-size: 30px;
       line-height: 1.0;
       font-weight: bold;
-
+      padding-bottom: -50px;
+      margin-bottom: -50px;
     }
     .l_c, .r_c {
       font-family: Georgia;
@@ -67,22 +67,11 @@
       text-align: center;
       border: solid 2px;
     }
-    .tck {
-      margin-top: 20px;
-      padding-bottom: 10px;
-    }
-    .bottom {
-      margin-top: 50px;
-    }
-
   </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="row ">
+<div>
 @if( isset($ticket) )
-
   <script type="text/javascript">
     window.print();
     setTimeout(function(){
@@ -90,8 +79,7 @@
      }, 
     3000);
   </script>
-   <?php   ?>
-    <div class="ticket_table">
+  <div class="ticket_table">
      <div class="table-head">
        <div class="h1 cent" > {{ $org_info->exists ? $org_info->name : " Organization Name Not Set "  }} </div>
        @if( $ticket->ticket_type != 'normal' )
@@ -112,7 +100,7 @@
          <div class=""> Time </div> 
          <div class=""> Issued by </div> 
          <div class=""> Amount  </div>
-       </div> 
+       </div> <!-- l_c  end -->
        <div class="r_c">  <!-- Ticket Table Details -->
         @if( $ticket->ticket_type == 'group' )
           <div class=""> {{ $ticket->no_of_adult }} </div>
@@ -124,18 +112,15 @@
          <div class=""> <?php echo date('d M, Y', strtotime($ticket->created_at)); ?> </div>
          <div class=""> <?php echo date('h:i a', strtotime($ticket->created_at)); ?> </div>
       
-         <div class="">  {{ $ticket->issued_by }} </div> <!-- user -->
+         <div class="">  {{ $ticket->user->username }} </div> <!-- user -->
          
          <div class="num"> <?php echo number_format($ticket->total); ?> </div> <!-- total Amount -->
-       </div>
+       </div> <!-- r_c end -->
      </div>
-     <div class="h3 bd-wrap tck" > ... <span class="num"> {{ $ticket->ticket_num }} </span> ... </div>
-  </div> 
-  <div class="bottom"> ---- </div>
-
+     <div class="h3 bd-wrap" > ... <span class="num"> {{ $ticket->ticket_num }} </span> ... </div>
+     <div> ---- </div>
+  </div> <!-- ticket table end -->
 @endif 
 </div>
-
-<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
