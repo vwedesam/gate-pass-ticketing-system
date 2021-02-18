@@ -1,6 +1,6 @@
-# Ticket Issuing App with Laravel
+# Gate Pass Ticketing App with Laravel
 
-[![Build Status](https://travis-ci.org/guillaumebriday/laravel-blog.svg?branch=master)](https://github.com/vwedesam/ticket-issuing-system)
+[![Build Status](https://travis-ci.org/guillaumebriday/laravel-blog.svg?branch=master)](https://github.com/vwedesam/gate-pass-ticket-issuing-system.git)
 
 
 ## Installation
@@ -11,8 +11,8 @@ Development environment requirements :
 
 Setting up your development environment on your local machine :
 ```bash
-$ git clone https://github.com/vwedesam/ticket-issuing-system.git
-$ cd ticket-issuing-system
+$ git clone https://github.com/vwedesam/gate-pass-ticketing-system.git
+$ cd gate-pass-ticketing-system
 $ cp .env.example .env
 ```
 
@@ -38,31 +38,28 @@ password: secret
 
 ## Some screenshots
 
- ![dashboard](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(7).png)
+ ![dashboard](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(7).png)
+ 
+![ticket](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/p-and-t.jpeg)
 
-<<<<<<< HEAD
  ![ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/p-and-t.jpg)
 
 ![Ticket Report](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(8).png)
 
 ![Role Management](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System.png)
 
-=======
-![Ticket Report](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(8).png)
+![Ticket Report](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(8).png)
 
-![Role Management](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System.png)
+![Role Management](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System.png)
 
->>>>>>> 409bec061207a86d21322e9976d27dd9ec58bb49
-![Assign Permission to Role](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
+![Assign Permission to Role](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
 
-![Add Vip Ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(2).png)
+![Add Vip Ticket](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(2).png)
 
-![Add Vip Group Ticket](https://github.com/vwedesam/ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
+![Add Vip Group Ticket](https://github.com/vwedesam/gate-pass-ticket-issuing-system/blob/master/public/assets/screenshot/Screenshot_2020-10-12%20SamVwede%20Ticketing%20System(1).png)
 
 ## License
 
-<<<<<<< HEAD
+
 This project is released under the [MIT](http://opensource.org/licenses/MIT) license.
-=======
-This project is released under the [MIT](http://opensource.org/licenses/MIT) license.
->>>>>>> 409bec061207a86d21322e9976d27dd9ec58bb49
+
